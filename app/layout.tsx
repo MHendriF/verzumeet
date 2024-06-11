@@ -1,8 +1,10 @@
+import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
+import "@stream-io/video-react-sdk/dist/css/styles.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import "@stream-io/video-react-sdk/dist/css/styles.css";
-import { ClerkProvider } from "@clerk/nextjs";
+import "react-datepicker/dist/react-datepicker.css";
+
 import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -35,8 +37,7 @@ export default function RootLayout({
             colorInputBackground: "#252A41",
             colorInputText: "#fff",
           },
-        }}
-      >
+        }}>
         <body className={`${inter.className} bg-dark-2`}>
           {children}
           <Toaster />
@@ -45,4 +46,3 @@ export default function RootLayout({
     </html>
   );
 }
-
