@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+    <h3 align="center">VerzuMeet: Revolutionize Your Virtual Meetings</h3>
+   <div align="center">
+    The cutting-edge platform designed to transform your virtual meeting experience. Whether you're connecting with colleagues, friends, or clients, VerzuMeet offers an intuitive, reliable, and feature-rich environment for seamless communication.
+    </div>
+</div>
 
-## Getting Started
+## 🚀 Feature
 
-First, run the development server:
+- **High-Definition Video and Audio**: Enjoy crystal-clear video and superior audio quality for a more engaging and productive meeting experience.
+- **Secure and Private**: Your privacy and security are our top priorities. VerzuMeet uses advanced encryption protocols to ensure that your conversations remain confidential.
+- **User-Friendly Interface**: Navigate effortlessly through our intuitive interface, designed for users of all technical skill levels.
+- **Screen Sharing and Collaboration**: Share your screen with ease and collaborate in real-time with integrated tools for presentations, document sharing, and more.
+- **Virtual Backgrounds**: Personalize your meeting space with customizable virtual backgrounds to maintain a professional appearance or express your creativity.
+- **Breakout Rooms**: Divide your meeting into smaller groups for focused discussions and collaborative work.
+- **Cross-Platform Compatibility**: Access VerzuMeet from any device—whether you're on a desktop, tablet, or smartphone, VerzuMeet is there for you.
+- **Recording**: Capture every detail by recording your meetings for easy reference and sharing.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ⚙️ Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js
+- Clerk
+- Getstream
+- Tailwind CSS
+- Shadcn-UI
+- TypeScript
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ❤️ Credits
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Adrian Hajdin - JS Mastery
 
-## Learn More
+## 🤖 Author
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**M Hendri Febriansyah**
