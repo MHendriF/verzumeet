@@ -1,5 +1,16 @@
+import { Metadata } from "next";
+import React, { ReactNode } from "react";
+
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+
+export const metadata: Metadata = {
+  title: "VerzuMeet",
+  description: "Virtual Meeting App",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
+};
 
 export default function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
