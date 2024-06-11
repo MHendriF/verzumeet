@@ -1,8 +1,7 @@
 "use client";
 
-import { useCall, useCallStateHooks } from "@stream-io/video-react-sdk";
-
 import { Button } from "./ui/button";
+import { useCall, useCallStateHooks } from "@stream-io/video-react-sdk";
 import { useRouter } from "next/navigation";
 
 export default function EndCallButton() {

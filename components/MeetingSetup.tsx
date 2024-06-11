@@ -1,9 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
-import { DeviceSettings, VideoPreview, useCall, useCallStateHooks } from "@stream-io/video-react-sdk";
 
 import Alert from "./Alert";
 import { Button } from "./ui/button";
+import { DeviceSettings, VideoPreview, useCall, useCallStateHooks } from "@stream-io/video-react-sdk";
+import { useEffect, useState } from "react";
 
 export default function MeetingSetup({ setIsSetupComplete }: { setIsSetupComplete: (value: boolean) => void }) {
   // https://getstream.io/video/docs/react/guides/call-and-participant-state/#call-state
@@ -54,8 +54,7 @@ export default function MeetingSetup({ setIsSetupComplete }: { setIsSetupComplet
           call.join();
 
           setIsSetupComplete(true);
-        }}
-      >
+        }}>
         Join meeting
       </Button>
     </div>

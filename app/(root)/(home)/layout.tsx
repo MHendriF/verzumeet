@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "VerzuMeet",
   description: "Virtual Meeting App",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/icons/verzumeet.svg",
   },
 };
 

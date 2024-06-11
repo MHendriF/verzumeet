@@ -1,5 +1,15 @@
 "use client";
-import { useState } from "react";
+
+import EndCallButton from "./EndCallButton";
+import Loader from "./Loader";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import { cn } from "@/lib/utils";
 import {
   CallControls,
   CallParticipantsList,
@@ -9,19 +19,9 @@ import {
   SpeakerLayout,
   useCallStateHooks,
 } from "@stream-io/video-react-sdk";
+import { LayoutList, Users } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Users, LayoutList } from "lucide-react";
-
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
-import Loader from "./Loader";
-import EndCallButton from "./EndCallButton";
-import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 type CallLayoutType = "grid" | "speaker-left" | "speaker-right";
 
@@ -57,8 +57,7 @@ export default function MeetingRoom() {
         <div
           className={cn("h-[calc(100vh-86px)] hidden ml-2", {
             "show-block": showParticipants,
-          })}
-        >
+          })}>
           <CallParticipantsList onClose={() => setShowParticipants(false)} />
         </div>
       </div>

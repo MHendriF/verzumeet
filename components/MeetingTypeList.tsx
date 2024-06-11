@@ -1,15 +1,15 @@
 "use client";
 
-import { useUser } from "@clerk/nextjs";
-import { useState } from "react";
 import HomeCard from "./HomeCard";
+import Loader from "./Loader";
 import MeetingModal from "./MeetingModal";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import Loader from "./Loader";
 import { useToast } from "./ui/use-toast";
-import { useRouter } from "next/navigation";
+import { useUser } from "@clerk/nextjs";
 import { Call, useStreamVideoClient } from "@stream-io/video-react-sdk";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import ReactDatePicker from "react-datepicker";
 
 const initialValues = {
@@ -100,8 +100,7 @@ export default function MeetingTypeList() {
           isOpen={meetingState === "isScheduleMeeting"}
           onClose={() => setMeetingState(undefined)}
           title="Create Meeting"
-          handleClick={createMeeting}
-        >
+          handleClick={createMeeting}>
           <div className="flex flex-col gap-2.5">
             <label className="text-base font-normal leading-[22.4px] text-sky-2">Add a description</label>
             <Textarea
@@ -145,8 +144,7 @@ export default function MeetingTypeList() {
         title="Type the link here"
         className="text-center"
         buttonText="Join Meeting"
-        handleClick={() => router.push(values.link)}
-      >
+        handleClick={() => router.push(values.link)}>
         <Input
           placeholder="Meeting link"
           onChange={(e) => setValues({ ...values, link: e.target.value })}

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "VerzuMeet",
   description: "Virtual Meeting App",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/icons/verzumeet.svg",
   },
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({
         appearance={{
           layout: {
             socialButtonsVariant: "iconButton",
-            logoImageUrl: "/icons/logo.svg",
+            logoImageUrl: "/icons/verzumeet.svg",
           },
           variables: {
             colorText: "#fff",
